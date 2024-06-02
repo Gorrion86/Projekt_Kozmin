@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26ecf1d-af72-4eb6-ba2a-9d350518ef08" name="Changes" comment="main page tests">
+    <list default="true" id="c26ecf1d-af72-4eb6-ba2a-9d350518ef08" name="Changes" comment="refactor some names">
+      <change afterPath="$PROJECT_DIR$/pages/my_account_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/support_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/support_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/login_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/login_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +50,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for login_page_test.LoginTest.test1_login_page_content_visible.executor": "Run",
     "Python tests.Python tests for login_test.LoginTest.test1_correct_login.executor": "Run",
     "Python tests.Python tests for login_test.LoginTest.test1_main_page_logo_visible.executor": "Run",
     "Python tests.Python tests for login_test.LoginTest.test2_correct_login.executor": "Run",
+    "Python tests.Python tests for login_test.LoginTest.test3_incorrect_login.executor": "Run",
     "Python tests.Python tests for main_page_test.MainPageTest.executor": "Run",
     "Python tests.Python tests for main_page_test.MainPageTest.test1_main_page_logo_visible.executor": "Run",
     "Python tests.Python tests for main_page_test.MainPageTest.test2_main_page_popup_dismiss.executor": "Run",
@@ -61,8 +65,8 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for main_page_test.MainPageTest">
-    <configuration name="Python tests for login_test.LoginTest.test1_correct_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for login_test.LoginTest.test3_incorrect_login">
+    <configuration name="Python tests for login_test.LoginTest.test2_correct_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,7 +77,22 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;login_test.LoginTest.test1_correct_login&quot;" />
+      <option name="_new_target" value="&quot;login_test.LoginTest.test2_correct_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for login_test.LoginTest.test3_incorrect_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Projekt_Kozmin" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;login_test.LoginTest.test3_incorrect_login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -92,36 +111,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main_page_test.MainPageTest.test1_main_page_logo_visible" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Projekt_Kozmin" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main_page_test.MainPageTest.test1_main_page_logo_visible&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for main_page_test.MainPageTest.test2_main_page_popup_dismiss" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Projekt_Kozmin" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main_page_test.MainPageTest.test2_main_page_popup_dismiss&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for main_page_test.MainPageTest.test3_main_page_hover_message" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
@@ -137,13 +126,28 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for tests.login_test.LoginTest.test1_login_page_content_visible" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Projekt_Kozmin" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.login_test.LoginTest.test1_login_page_content_visible&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for login_test.LoginTest.test3_incorrect_login" />
+        <item itemvalue="Python tests.Python tests for login_test.LoginTest.test2_correct_login" />
         <item itemvalue="Python tests.Python tests for main_page_test.MainPageTest" />
+        <item itemvalue="Python tests.Python tests for tests.login_test.LoginTest.test1_login_page_content_visible" />
         <item itemvalue="Python tests.Python tests for main_page_test.MainPageTest.test3_main_page_hover_message" />
-        <item itemvalue="Python tests.Python tests for main_page_test.MainPageTest.test2_main_page_popup_dismiss" />
-        <item itemvalue="Python tests.Python tests for login_test.LoginTest.test1_correct_login" />
-        <item itemvalue="Python tests.Python tests for main_page_test.MainPageTest.test1_main_page_logo_visible" />
       </list>
     </recent_temporary>
   </component>
@@ -171,11 +175,20 @@
       <option name="project" value="LOCAL" />
       <updated>1717356252343</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor some names">
+      <option name="closed" value="true" />
+      <created>1717357927693</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717357927693</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="main page tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="main page tests" />
+    <MESSAGE value="refactor some names" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor some names" />
   </component>
 </project>
