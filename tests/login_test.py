@@ -1,6 +1,5 @@
 from tests.base_test import BaseTest
 from pages import main_page, login_page, my_account_page
-from time import sleep
 
 
 class LoginTest(BaseTest):

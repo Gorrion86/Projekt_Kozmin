@@ -1,33 +1,34 @@
 from helpers.support_functions import *
 from selenium.webdriver.common.by import By
 
-logo_classname = "custom-logo-link"
-popup_xp = '/html/body/p'
-popup_dismiss_xp = '/html/body/p/a'
-my_account_menu_item_id = "menu-item-100"
-cart_menu_item = "menu-item-99"
+class MainPageLocators:
+    logo = (By.CLASS_NAME, "custom-logo-link")
+    popup = (By.XPATH, '/html/body/p')
+    popup_dismiss = (By.XPATH, '/html/body/p/a')
+    my_account_menu_item = (By.ID, "menu-item-100")
+    cart_menu_item = (By.ID, "menu-item-99")
 
 
 def logo_visible(driver_instance):
-    element = wait_for_visibility_of_element_by_classname(driver_instance, logo_classname)
+    element = wait_for_visibility_of_element(driver_instance, MainPageLocators.logo)
     return element.is_displayed()
 
 
 def popup_visible(driver_instance):
-    element = wait_for_visibility_of_element_by_xpath(driver_instance, popup_xp)
+    element = wait_for_visibility_of_element(driver_instance, MainPageLocators.popup)
     return element.is_displayed()
 
 
 def popup_invisible(driver_instance):
-    element = wait_for_invisibility_of_element_by_xpath(driver_instance, popup_xp)
+    element = wait_for_invisibility_of_element(driver_instance, MainPageLocators.popup)
     return element.is_displayed()
 
 
-def popup_dismiss(driver_instance):
-    wait_for_visibility_of_element_by_xpath(driver_instance, popup_dismiss_xp)
-    driver_instance.find_element(By.XPATH, popup_dismiss_xp).click()
+def popup_dismiss_click(driver_instance):
+    wait_for_visibility_of_element(driver_instance, MainPageLocators.popup_dismiss)
+    driver_instance.find_element(*MainPageLocators.popup_dismiss).click()
 
 
 def go_to_login_page(driver_instance):
-    wait_for_visibility_of_element_by_id(driver_instance, my_account_menu_item_id)
-    driver_instance.find_element(By.ID, my_account_menu_item_id).click()
+    wait_for_visibility_of_element(driver_instance, MainPageLocators.my_account_menu_item)
+    driver_instance.find_element(*MainPageLocators.my_account_menu_item).click()

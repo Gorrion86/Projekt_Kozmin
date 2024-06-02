@@ -9,5 +9,5 @@ class MainPageTest(BaseTest):
 
     def test2_main_page_popup_dismiss(self):
         self.assertTrue(main_page.popup_visible(self.driver))
-        main_page.popup_dismiss(self.driver)
+        main_page.popup_dismiss_click(self.driver)
         self.assertFalse(main_page.popup_invisible(self.driver))
