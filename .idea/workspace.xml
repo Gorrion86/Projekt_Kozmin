@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26ecf1d-af72-4eb6-ba2a-9d350518ef08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Projekt_Kozmin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/test_settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/support_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/login_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/base_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/login_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/main_page_test.py" afterDir="false" />
+    <list default="true" id="c26ecf1d-af72-4eb6-ba2a-9d350518ef08" name="Changes" comment="main page tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/support_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/support_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +51,7 @@
     "Python tests.Python tests for login_test.LoginTest.test1_correct_login.executor": "Run",
     "Python tests.Python tests for login_test.LoginTest.test1_main_page_logo_visible.executor": "Run",
     "Python tests.Python tests for login_test.LoginTest.test2_correct_login.executor": "Run",
+    "Python tests.Python tests for main_page_test.MainPageTest.executor": "Run",
     "Python tests.Python tests for main_page_test.MainPageTest.test1_main_page_logo_visible.executor": "Run",
     "Python tests.Python tests for main_page_test.MainPageTest.test2_main_page_popup_dismiss.executor": "Run",
     "Python tests.Python tests for main_page_test.MainPageTest.test3_main_page_hover_message.executor": "Run",
@@ -75,7 +61,7 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for main_page_test.MainPageTest.test3_main_page_hover_message">
+  <component name="RunManager" selected="Python tests.Python tests for main_page_test.MainPageTest">
     <configuration name="Python tests for login_test.LoginTest.test1_correct_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
@@ -91,7 +77,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for login_test.LoginTest.test1_main_page_logo_visible" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for main_page_test.MainPageTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,7 +88,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;login_test.LoginTest.test1_main_page_logo_visible&quot;" />
+      <option name="_new_target" value="&quot;main_page_test.MainPageTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -153,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for main_page_test.MainPageTest" />
         <item itemvalue="Python tests.Python tests for main_page_test.MainPageTest.test3_main_page_hover_message" />
         <item itemvalue="Python tests.Python tests for main_page_test.MainPageTest.test2_main_page_popup_dismiss" />
         <item itemvalue="Python tests.Python tests for login_test.LoginTest.test1_correct_login" />
         <item itemvalue="Python tests.Python tests for main_page_test.MainPageTest.test1_main_page_logo_visible" />
-        <item itemvalue="Python tests.Python tests for login_test.LoginTest.test1_main_page_logo_visible" />
       </list>
     </recent_temporary>
   </component>
@@ -177,6 +163,19 @@
       <option name="presentableId" value="Default" />
       <updated>1717336934440</updated>
     </task>
+    <task id="LOCAL-00001" summary="main page tests">
+      <option name="closed" value="true" />
+      <created>1717356252343</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717356252343</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="main page tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="main page tests" />
   </component>
 </project>
