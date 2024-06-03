@@ -4,9 +4,9 @@ from test_data import login_data
 
 
 class LoginPageLocators:
-    customer_login_content = (By.ID, "customer_login")
-    username = (By.ID, "username")
-    password = (By.ID, "password")
+    customer_login_content = (By.ID, 'customer_login')
+    username = (By.ID, 'username')
+    password = (By.ID, 'password')
     login_button = (By.XPATH, '//*[@id="customer_login"]/div[1]/form/p[3]/button')
     register_button = (By.XPATH, '//*[@id="customer_login"]/div[2]/form/p[3]/button')
     wrong_login_alert = (By.XPATH, '//*[@class="woocommerce-error"]/li[contains(.,"nieprawidłowa nazwa użytkownika lub hasło.")]')

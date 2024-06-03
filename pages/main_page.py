@@ -2,12 +2,12 @@ from helpers.support_functions import *
 from selenium.webdriver.common.by import By
 
 class MainPageLocators:
-    logo = (By.CLASS_NAME, "custom-logo-link")
-    main_page_content = (By.CLASS_NAME, "wp-block-cover")
+    logo = (By.CLASS_NAME, 'custom-logo-link')
+    main_page_content = (By.CLASS_NAME, 'wp-block-cover')
     popup = (By.XPATH, '/html/body/p')
     popup_dismiss = (By.XPATH, '/html/body/p/a')
-    my_account_menu_item = (By.ID, "menu-item-100")
-    cart_menu_item = (By.ID, "menu-item-99")
+    my_account_menu_item = (By.ID, 'menu-item-100')
+    cart_menu_item = (By.ID, 'menu-item-99')
 
 
 def logo_visible(driver_instance):

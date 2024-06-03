@@ -24,7 +24,6 @@ class LoginTest(BaseTest):
         login_page.empty_email_registration_attempt(self.driver)
         self.assertTrue(login_page.empty_email_alert_visible(self.driver))
 
-
     def test5_back_to_main_page_breadcrump(self):
         main_page.go_to_login_page(self.driver)
         login_page.back_to_main_page_breadcrumps(self.driver)
