@@ -11,6 +11,7 @@ class LoginPageLocators:
     register_button = (By.XPATH, '//*[@id="customer_login"]/div[2]/form/p[3]/button')
     wrong_login_alert = (By.XPATH, '//*[@class="woocommerce-error"]/li[contains(.,"nieprawidłowa nazwa użytkownika lub hasło.")]')
     empty_email_registration_alert = (By.XPATH, '//*[@class="woocommerce-error"]/li[contains(.,"Proszę podać poprawny adres e-mail.")]')
+    breadcrump_main_page = (By.XPATH, '//*[@class="woocommerce-breadcrumb"]/a[contains(.,"Strona główna")]')
 
 
 def login_page_content_visible(driver_instance):
@@ -45,3 +46,8 @@ def empty_email_registration_attempt(driver_instance):
 def empty_email_alert_visible(driver_instance):
     element = wait_for_visibility_of_element(driver_instance, LoginPageLocators.empty_email_registration_alert)
     return element.is_displayed()
+
+
+def back_to_main_page_breadcrumps(driver_instance):
+    wait_for_visibility_of_element(driver_instance, LoginPageLocators.breadcrump_main_page)
+    driver_instance.find_element(*LoginPageLocators.breadcrump_main_page).click()

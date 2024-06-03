@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 
 class MainPageLocators:
     logo = (By.CLASS_NAME, "custom-logo-link")
+    main_page_content = (By.CLASS_NAME, "wp-block-cover")
     popup = (By.XPATH, '/html/body/p')
     popup_dismiss = (By.XPATH, '/html/body/p/a')
     my_account_menu_item = (By.ID, "menu-item-100")
@@ -11,6 +12,11 @@ class MainPageLocators:
 
 def logo_visible(driver_instance):
     element = wait_for_visibility_of_element(driver_instance, MainPageLocators.logo)
+    return element.is_displayed()
+
+
+def main_page_content_visible(driver_instance):
+    element = wait_for_visibility_of_element(driver_instance, MainPageLocators.main_page_content)
     return element.is_displayed()
 
 
