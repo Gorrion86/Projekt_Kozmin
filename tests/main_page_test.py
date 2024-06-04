@@ -1,10 +1,12 @@
 from tests.base_test import BaseTest
 from pages import main_page
+from config.test_settings import TestSettings
+from time import sleep
 
 
 class MainPageTest(BaseTest):
 
-    def test1_main_page_logo_visible(self):
+    def test1_logo_visible(self):
         self.assertTrue(main_page.logo_visible(self.driver))
 
     def test2_main_page_content_visible(self):

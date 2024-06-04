@@ -1,5 +1,7 @@
 from helpers.support_functions import *
 from selenium.webdriver.common.by import By
+from time import sleep
+
 
 class MainPageLocators:
     logo = (By.CLASS_NAME, 'custom-logo-link')
@@ -8,6 +10,7 @@ class MainPageLocators:
     popup_dismiss = (By.XPATH, '/html/body/p/a')
     my_account_menu_item = (By.ID, 'menu-item-100')
     cart_menu_item = (By.ID, 'menu-item-99')
+    search_field = (By.ID, 'woocommerce-product-search-field-0')
 
 
 def logo_visible(driver_instance):
@@ -38,3 +41,15 @@ def popup_dismiss_click(driver_instance):
 def go_to_login_page(driver_instance):
     wait_for_visibility_of_element(driver_instance, MainPageLocators.my_account_menu_item)
     driver_instance.find_element(*MainPageLocators.my_account_menu_item).click()
+
+
+def search_for_product(driver_instance, product):
+    wait_for_visibility_of_element(driver_instance, MainPageLocators.search_field)
+    element = driver_instance.find_element(*MainPageLocators.search_field)
+    element.send_keys(product)
+    element.submit()
+
+
+def go_to_cart(driver_instance):
+    wait_for_visibility_of_element(driver_instance, MainPageLocators.cart_menu_item)
+    driver_instance.find_element(*MainPageLocators.cart_menu_item).click()
