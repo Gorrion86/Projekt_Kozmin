@@ -1,6 +1,6 @@
 from helpers.support_functions import *
 from selenium.webdriver.common.by import By
-from test_data import login_data
+from test_data.login_data import LoginData
 
 
 class LoginPageLocators:
@@ -21,15 +21,15 @@ def login_page_content_visible(driver_instance):
 
 def correct_login(driver_instance):
     wait_for_visibility_of_element(driver_instance, LoginPageLocators.username)
-    driver_instance.find_element(*LoginPageLocators.username).send_keys(login_data.correct_username)
-    driver_instance.find_element(*LoginPageLocators.password).send_keys(login_data.correct_password)
+    driver_instance.find_element(*LoginPageLocators.username).send_keys(LoginData.correct_username)
+    driver_instance.find_element(*LoginPageLocators.password).send_keys(LoginData.correct_password)
     driver_instance.find_element(*LoginPageLocators.login_button).click()
 
 
 def incorrect_login(driver_instance):
     wait_for_visibility_of_element(driver_instance, LoginPageLocators.username)
-    driver_instance.find_element(*LoginPageLocators.username).send_keys(login_data.incorrect_username)
-    driver_instance.find_element(*LoginPageLocators.password).send_keys(login_data.incorrect_password)
+    driver_instance.find_element(*LoginPageLocators.username).send_keys(LoginData.incorrect_username)
+    driver_instance.find_element(*LoginPageLocators.password).send_keys(LoginData.incorrect_password)
     driver_instance.find_element(*LoginPageLocators.login_button).click()
 
 
