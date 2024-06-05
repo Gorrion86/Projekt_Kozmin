@@ -12,7 +12,7 @@ class LoginTest(BaseTest):
     def test2_correct_login(self):
         main_page.go_to_login_page(self.driver)
         login_page.correct_login(self.driver)
-        self.assertTrue(my_account_page.my_account_header_visible(self.driver))
+        self.assertTrue(my_account_page.my_account_content_visible(self.driver))
 
     def test3_incorrect_login(self):
         main_page.go_to_login_page(self.driver)
@@ -28,3 +28,10 @@ class LoginTest(BaseTest):
         main_page.go_to_login_page(self.driver)
         login_page.back_to_main_page_breadcrumbs(self.driver)
         self.assertTrue(main_page.main_page_content_visible(self.driver))
+
+    def test6_log_out(self):
+        main_page.go_to_login_page(self.driver)
+        login_page.correct_login(self.driver)
+        self.assertTrue(my_account_page.my_account_content_visible(self.driver))
+        my_account_page.log_out(self.driver)
+        self.assertTrue(login_page.login_page_content_visible(self.driver))

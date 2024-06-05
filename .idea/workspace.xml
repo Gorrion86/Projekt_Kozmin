@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26ecf1d-af72-4eb6-ba2a-9d350518ef08" name="Changes" comment="typo fix">
-      <change afterPath="$PROJECT_DIR$/pages/cart_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/cart_test.py" afterDir="false" />
+    <list default="true" id="c26ecf1d-af72-4eb6-ba2a-9d350518ef08" name="Changes" comment="test data fix">
+      <change afterPath="$PROJECT_DIR$/pages/order_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/shipping_adress_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/test_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/test_settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/base_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/main_page_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/main_page_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cart_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/my_account_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my_account_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/shopping_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/shopping_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,30 +54,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for login_page_test.LoginTest.test1_login_page_content_visible.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_test.LoginTest.test1_correct_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_test.LoginTest.test1_login_page_content_visible.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_test.LoginTest.test1_main_page_logo_visible.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_test.LoginTest.test2_correct_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_test.LoginTest.test3_incorrect_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_test.LoginTest.test4_empty_email_registration_attempt.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_test.LoginTest.test5_back_to_main_page_breadcrumb.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_test.LoginTest.test5_back_to_main_page_breadcrump.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main_page_test.MainPageTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main_page_test.MainPageTest.test1_main_page_logo_visible.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main_page_test.MainPageTest.test2_main_page_content_visible.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main_page_test.MainPageTest.test2_main_page_popup_dismiss.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for main_page_test.MainPageTest.test3_main_page_hover_message.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CODE/KursTAPS/PrestaPageObject&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for cart_test.CartTest.test1_add_product_to_cart.executor": "Run",
+    "Python tests.Python tests for login_page_test.LoginTest.test1_login_page_content_visible.executor": "Run",
+    "Python tests.Python tests for login_test.LoginTest.test1_correct_login.executor": "Run",
+    "Python tests.Python tests for login_test.LoginTest.test1_login_page_content_visible.executor": "Run",
+    "Python tests.Python tests for login_test.LoginTest.test1_main_page_logo_visible.executor": "Run",
+    "Python tests.Python tests for login_test.LoginTest.test2_correct_login.executor": "Run",
+    "Python tests.Python tests for login_test.LoginTest.test3_incorrect_login.executor": "Run",
+    "Python tests.Python tests for login_test.LoginTest.test4_empty_email_registration_attempt.executor": "Run",
+    "Python tests.Python tests for login_test.LoginTest.test5_back_to_main_page_breadcrumb.executor": "Run",
+    "Python tests.Python tests for login_test.LoginTest.test5_back_to_main_page_breadcrump.executor": "Run",
+    "Python tests.Python tests for main_page_test.MainPageTest.executor": "Run",
+    "Python tests.Python tests for main_page_test.MainPageTest.test1_main_page_logo_visible.executor": "Run",
+    "Python tests.Python tests for main_page_test.MainPageTest.test2_main_page_content_visible.executor": "Run",
+    "Python tests.Python tests for main_page_test.MainPageTest.test2_main_page_popup_dismiss.executor": "Run",
+    "Python tests.Python tests for main_page_test.MainPageTest.test3_main_page_hover_message.executor": "Run",
+    "Python tests.Python tests for main_page_test.MainPageTest.test4_add_product_to_cart.executor": "Run",
+    "Python tests.Python tests for main_page_test.MainPageTest.test4_search_for_product.executor": "Run",
+    "Python tests.Python tests for product_test.CartTest.test1_add_product_to_cart.executor": "Run",
+    "Python tests.Python tests for product_test.CartTest.test2_go_to_cart.executor": "Run",
+    "Python tests.Python tests for product_test.CartTest.test2_remove_product_from_cart.executor": "Run",
+    "Python tests.Python tests for shopping_test.ShoppingTest.test1_add_product_to_cart.executor": "Run",
+    "Python tests.Python tests for shopping_test.ShoppingTest.test2_remove_product_from_cart.executor": "Run",
+    "Python tests.Python tests for shopping_test.ShoppingTest.test3_buy_products.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/CODE/KursTAPS/PrestaPageObject",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python tests.Python tests for login_test.LoginTest.test5_back_to_main_page_breadcrumb">
-    <configuration name="Python tests for login_test.LoginTest.test4_empty_email_registration_attempt" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Python tests.Python tests for login_test.LoginTest.test6_log_out">
+    <configuration name="Python tests for login_test.LoginTest.test6_log_out" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,11 +97,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;login_test.LoginTest.test4_empty_email_registration_attempt&quot;" />
+      <option name="_new_target" value="&quot;login_test.LoginTest.test6_log_out&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for login_test.LoginTest.test5_back_to_main_page_breadcrumb" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for shopping_test.ShoppingTest.test1_add_product_to_cart" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,11 +112,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;login_test.LoginTest.test5_back_to_main_page_breadcrumb&quot;" />
+      <option name="_new_target" value="&quot;shopping_test.ShoppingTest.test1_add_product_to_cart&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main_page_test.MainPageTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for shopping_test.ShoppingTest.test2_remove_product_from_cart" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,11 +127,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main_page_test.MainPageTest&quot;" />
+      <option name="_new_target" value="&quot;shopping_test.ShoppingTest.test2_remove_product_from_cart&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main_page_test.MainPageTest.test2_main_page_content_visible" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for shopping_test.ShoppingTest.test3_buy_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,11 +142,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main_page_test.MainPageTest.test2_main_page_content_visible&quot;" />
+      <option name="_new_target" value="&quot;shopping_test.ShoppingTest.test3_buy_products&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.login_test.LoginTest.test5_back_to_main_page_breadcrumb" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.shopping_test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,17 +157,47 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.login_test.LoginTest.test5_back_to_main_page_breadcrumb&quot;" />
+      <option name="_new_target" value="&quot;tests.shopping_test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.shopping_test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Projekt_Kozmin" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.shopping_test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.shopping_test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Projekt_Kozmin" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.shopping_test&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for login_test.LoginTest.test5_back_to_main_page_breadcrumb" />
-        <item itemvalue="Python tests.Python tests for tests.login_test.LoginTest.test5_back_to_main_page_breadcrumb" />
-        <item itemvalue="Python tests.Python tests for main_page_test.MainPageTest.test2_main_page_content_visible" />
-        <item itemvalue="Python tests.Python tests for main_page_test.MainPageTest" />
-        <item itemvalue="Python tests.Python tests for login_test.LoginTest.test4_empty_email_registration_attempt" />
+        <item itemvalue="Python tests.Python tests for login_test.LoginTest.test6_log_out" />
+        <item itemvalue="Python tests.Python tests for shopping_test.ShoppingTest.test3_buy_products" />
+        <item itemvalue="Python tests.Python tests for shopping_test.ShoppingTest.test2_remove_product_from_cart" />
+        <item itemvalue="Python tests.Python tests for shopping_test.ShoppingTest.test1_add_product_to_cart" />
+        <item itemvalue="Python tests.Python tests for tests.shopping_test" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +281,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717450781451</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add to cart and remove from cart tests">
+      <option name="closed" value="true" />
+      <created>1717533937725</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717533937725</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add to cart and remove from cart tests">
+      <option name="closed" value="true" />
+      <created>1717534243750</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717534243750</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test data fix">
+      <option name="closed" value="true" />
+      <created>1717534282619</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717534282619</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,6 +327,8 @@
     <MESSAGE value="breadcrumps test" />
     <MESSAGE value="changed locators" />
     <MESSAGE value="typo fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="typo fix" />
+    <MESSAGE value="add to cart and remove from cart tests" />
+    <MESSAGE value="test data fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="test data fix" />
   </component>
 </project>
