@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26ecf1d-af72-4eb6-ba2a-9d350518ef08" name="Changes" comment="logout test + partial shopping test">
+    <list default="true" id="c26ecf1d-af72-4eb6-ba2a-9d350518ef08" name="Changes" comment="shopping test final commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers/support_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/support_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cart_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/order_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/order_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/login_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/login_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/shopping_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/shopping_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +80,8 @@
     "Python tests.Python tests for shopping_test.ShoppingTest.test2_remove_product_from_cart.executor": "Run",
     "Python tests.Python tests for shopping_test.ShoppingTest.test3_buy_products.executor": "Run",
     "Python tests.Python tests for shopping_test.ShoppingTest.test3_order_form_validation.executor": "Run",
+    "Python tests.Python tests for shopping_test.ShoppingTest.test3_place_next_order.executor": "Run",
+    "Python tests.Python tests for shopping_test.ShoppingTest.test3_place_order.executor": "Run",
     "Python tests.Python tests for shopping_test.ShoppingTest.test4_buy_products.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -87,7 +89,7 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for shopping_test.ShoppingTest.test3_buy_products">
+  <component name="RunManager" selected="Python tests.Python tests for shopping_test.ShoppingTest.test3_place_order">
     <configuration name="Python tests for login_test.LoginTest.test6_log_out" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
@@ -100,21 +102,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;login_test.LoginTest.test6_log_out&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for shopping_test.ShoppingTest.test2_remove_product_from_cart" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Projekt_Kozmin" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;shopping_test.ShoppingTest.test2_remove_product_from_cart&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -148,7 +135,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for shopping_test.ShoppingTest.test4_buy_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for shopping_test.ShoppingTest.test3_place_next_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Projekt_Kozmin" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,7 +146,22 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;shopping_test.ShoppingTest.test4_buy_products&quot;" />
+      <option name="_new_target" value="&quot;shopping_test.ShoppingTest.test3_place_next_order&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for shopping_test.ShoppingTest.test3_place_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Projekt_Kozmin" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;shopping_test.ShoppingTest.test3_place_order&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -195,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for shopping_test.ShoppingTest.test3_place_order" />
+        <item itemvalue="Python tests.Python tests for shopping_test.ShoppingTest.test3_place_next_order" />
+        <item itemvalue="Python tests.Python tests for login_test.LoginTest.test6_log_out" />
         <item itemvalue="Python tests.Python tests for shopping_test.ShoppingTest.test3_buy_products" />
         <item itemvalue="Python tests.Python tests for shopping_test.ShoppingTest.test3_order_form_validation" />
-        <item itemvalue="Python tests.Python tests for shopping_test.ShoppingTest.test4_buy_products" />
-        <item itemvalue="Python tests.Python tests for login_test.LoginTest.test6_log_out" />
-        <item itemvalue="Python tests.Python tests for shopping_test.ShoppingTest.test2_remove_product_from_cart" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717618188654</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="shopping test final commit">
+      <option name="closed" value="true" />
+      <created>1717623116309</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717623116309</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,6 +350,7 @@
     <MESSAGE value="add to cart and remove from cart tests" />
     <MESSAGE value="test data fix" />
     <MESSAGE value="logout test + partial shopping test" />
-    <option name="LAST_COMMIT_MESSAGE" value="logout test + partial shopping test" />
+    <MESSAGE value="shopping test final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="shopping test final commit" />
   </component>
 </project>

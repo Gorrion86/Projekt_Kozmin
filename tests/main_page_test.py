@@ -1,7 +1,5 @@
 from tests.base_test import BaseTest
 from pages import main_page
-from config.test_settings import TestSettings
-from time import sleep
 
 
 class MainPageTest(BaseTest):

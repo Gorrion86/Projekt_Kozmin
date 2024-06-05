@@ -1,6 +1,5 @@
 from helpers.support_functions import *
 from selenium.webdriver.common.by import By
-from time import sleep
 
 
 class ProductPageLocators:

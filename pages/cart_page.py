@@ -2,9 +2,6 @@ from helpers.support_functions import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from test_data.shipping_adress_data import ShippingAdressData
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from time import sleep
 
 
 class CartPageLocators:
@@ -62,4 +59,5 @@ def calculate_shipping_cost(driver_instance):
 
 def checkout_cart(driver_instance):
     wait_for_visibility_of_element(driver_instance, CartPageLocators.checkout_button)
-    driver_instance.find_element(*CartPageLocators.checkout_button).click()
+    element = driver_instance.find_element(*CartPageLocators.checkout_button)
+    element.click()
