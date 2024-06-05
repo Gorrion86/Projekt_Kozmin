@@ -2,6 +2,8 @@ from helpers.support_functions import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from test_data.shipping_adress_data import ShippingAdressData
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 
 
@@ -53,9 +55,11 @@ def calculate_shipping_cost(driver_instance):
     wait_for_visibility_of_element(driver_instance, CartPageLocators.city_field)
     driver_instance.find_element(*CartPageLocators.city_field).send_keys(ShippingAdressData.city)
     driver_instance.find_element(*CartPageLocators.postal_code_field).send_keys(ShippingAdressData.postal_code)
+    wait_for_element_to_be_clickable(driver_instance, CartPageLocators.update_shipping_cost)
     driver_instance.find_element(*CartPageLocators.update_shipping_cost).click()
     wait_for_visibility_of_element(driver_instance, CartPageLocators.update_cart_success_message)
 
 
 def checkout_cart(driver_instance):
+    wait_for_visibility_of_element(driver_instance, CartPageLocators.checkout_button)
     driver_instance.find_element(*CartPageLocators.checkout_button).click()
