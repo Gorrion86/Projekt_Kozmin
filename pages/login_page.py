@@ -21,7 +21,7 @@ def login_page_content_visible(driver_instance):
 
 def correct_login(driver_instance):
     wait_for_visibility_of_element(driver_instance, LoginPageLocators.username)
-    driver_instance.find_element(*LoginPageLocators.username).send_keys(LoginData.correct_username3)
+    driver_instance.find_element(*LoginPageLocators.username).send_keys(LoginData.correct_username4)
     driver_instance.find_element(*LoginPageLocators.password).send_keys(LoginData.correct_password)
     driver_instance.find_element(*LoginPageLocators.login_button).click()
 
